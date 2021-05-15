@@ -1,24 +1,57 @@
 body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #F4D35E;
     background: linear-gradient(75deg, #0d3b66, #d63230);
 }
 
-#logo {
-    font-family: 'Lobster', cursive;
-    size: 10px;
+
+/* HEADER */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
 
-header {
-    color: #FBFBFF;
-    text-align: center;
-    font-family: 'Abel', sans-serif;
+#icon-logo {
+    height: 30px;
+}
+
+#text-logo {
+    color: #f0f0f0;
+    font-family: 'Lobster', cursive;
     font-size: 25px;
 }
 
-#title {
-    color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
+.subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #FBFBFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: gainsboro;
 }
+
+.subtitle #title {
+    font-size: 25px;
+    margin: 0;
+}
+
+.subtitle #description {
+    font-size: 15px;
+    margin: 0;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* FORM */
 
 #form-container {
     background-color: #faf0ca;
