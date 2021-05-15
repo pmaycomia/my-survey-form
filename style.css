@@ -10,61 +10,59 @@ body {
 /* HEADER */
 
 .logo {
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 150px;
 }
 
 #icon-logo {
-    height: 30px;
+    height: 40px;
 }
 
 #text-logo {
     color: #f0f0f0;
     font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-size: 40px;
 }
 
-.subtitle {
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
+
+/* FORM CONTAINER */
+
+.form-container {
+    display: block;
+    margin: 0 50px;
+    background-color: #faf0ca;
+    opacity: 0.85;
+    font-family: 'Abel', sans-serif;
+}
+
+.survey {
+    margin: 30px;
+    padding: 30px;
     color: #FBFBFF;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: gainsboro;
+    color: rgb(0, 0, 0);
 }
 
-.subtitle #title {
+.survey #title {
     font-size: 25px;
     margin: 0;
+    font-weight: bold;
 }
 
-.subtitle #description {
+.survey #description {
     font-size: 15px;
     margin: 0;
 }
 
-#title {
-    font-family: 'Montserrat', sans-serif;
-}
 
+/*  START OF FORM */
 
-/* FORM */
-
-#form-container {
-    background-color: #faf0ca;
-    opacity: 0.85;
-    text-align: left;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 50px;
-    font-size: 22px;
-    font-family: 'Abel', sans-serif;
+.form {
+    margin: 20px;
 }
 
 input[type="text"] {
@@ -100,13 +98,4 @@ select {
 button {
     font-size: 20px;
     font-family: 'Abel', sans-serif;
-}
-
-@media only screen and (max-width: 800px) {
-    #form-container {
-        background-color: #faf0ca;
-        padding: 5px;
-        margin: 0;
-        border-radius: 5px;
-    }
 }
