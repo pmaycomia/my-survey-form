@@ -1,78 +1,80 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>The Spicy Juan | Survey Form</title>
+
+<body>
+    <header>
+        <h2 id="logo">The Spicy Juan</h2>
+        <h4 id="title">Survey Form</h4>
+        <p id="description">
+            <em>Thank you for helping us improve our products!</em>
+        </p>
+    </header>
+
+    <div id="form-container">
+        <form id="survey-form">
+            <label id="name-label"><strong>Name:</strong></label>
+            <input id="name" type="text" placeholder="enter your name here" id="name-label" required>
+            <hr>
 
 
-<header>
-    <h1 id="title">The Spicy Juan's Survey Form</h1>
-    <p id="description"><em>Thank you for helping us improve our products!</em>
-        </>
-    </p>
-</header>
 
+            <label id="email-label"><strong>E-mail:</strong></label> <br><br>
+            <input id="email" type="email" placeholder="enter your email here" id="email-label" required>
+            <hr>
 
+            <label id="number-label"><strong>Age: </strong><em>(optional)</em></label> <br><br>
+            <input id="number" type="number" placeholder="your age here" id="age-label" min="16" max="99">
+            <hr>
 
+            <div>
+                <label for="product-selection" required><strong>What did you order?</strong></label>
+            </div><br>
+            <select name="products" id="dropdown">
+                <option value="">--Please choose an option--</option>
+                <option id="dropdown" value="kimchee">Kimchee</option>
+                <option value="bibimbap">Bibimbap</option>
+                <option value="fried-chicken">Fried Chicken Wings</option>
+                <option value="jajangmyeon">Jajangmyeon</option>
+                <option value="japchae">Japchae</option>
+            </select>
+            <hr>
 
-<div id="form-container">
-    <form id="survey-form">
+            <label id="rating"><strong>How would you rate our product?</strong><em>(1 being the lowest and 5 the
+                    highest)</em></label><br><br>
+            <label for="rating"><input id="one" value="one" type="radio" name="one-five"> 1</label>
+            <label for="rating"><input id="two" value="two" type="radio" name="one-five"> 2</label>
+            <label for="rating"><input id="three" value="three" type="radio" name="one-five"> 3</label>
+            <label for="rating"><input id="four" value="four" type="radio" name="one-five"> 4</label>
+            <label for="rating"><input id="five" value="five" type="radio" name="one-five"> 5</label>
+            <hr>
 
-        <label id="name-label"><strong>Name:</strong></label> <br><br>
-        <input id="name" type="text" placeholder="enter your name here" id="name-label" required>
-        <hr>
+            <label><strong>How would you describe the taste?</strong></label><br><br>
+            <label for="sour"><input value="sour" id="sour" type="checkbox" name="taste" ca> Sour</label><br>
+            <label for="fresh"><input value="fresh" id="fresh" type="checkbox" name="taste"> Fresh</label><br>
+            <label for="greasy"><input value="greasy" id="greasy" type="checkbox" name="taste"> Greasy</label><br>
+            <label for="too-spicy"><input value="too-spicy" id="too-spicy" type="checkbox" name="taste">Too
+                Spicy</label><br>
+            <label for="too-salty"><input value="too-salty" id="too-salty" type="checkbox" name="taste">Too
+                Salty</label><br>
+            <label for="too-sweet"><input value="too-sweet" id="too-sweet" type="checkbox" name="taste">Too
+                Sweet</label><br>
+            <label for="perfect-balance"><input value="perfect-balace" id="perfect-balance" type="checkbox"
+                    name="taste">Perfect Balance of Salt, Sugar and Spice</label><br>
+            <label for="juicy"><input value="juicy" id="juicy" type="checkbox" name="taste"> Juicy</label>
+            <hr>
 
+            <label for="extra-comments"><strong>Can you tell us more?</strong></label><br><br>
+            <textarea placeholder="enter your comment here..." id="comments" name="comments" rows="4" cols="30">
+        </textarea>
+            <br><br>
+            <hr>
 
-
-        <label id="email-label"><strong>E-mail:</strong></label> <br><br>
-        <input id="email" type="email" placeholder="enter your email here" id="email-label" required>
-        <hr>
-
-        <label id="number-label"><strong>Age: </strong><em>(optional)</em></label> <br><br>
-        <input id="number" type="number" placeholder="your age here" id="age-label" min="16" max="99">
-        <hr>
-
-        <div>
-            <label for="product-selection" required><strong>What did you order?</strong></label>
-        </div><br>
-        <select name="products" id="dropdown">
-            <option value="">--Please choose an option--</option>
-            <option id="dropdown" value="kimchee">Kimchee</option>
-            <option value="bibimbap">Bibimbap</option>
-            <option value="fried-chicken">Fried Chicken Wings</option>
-            <option value="jajangmyeon">Jajangmyeon</option>
-            <option value="japchae">Japchae</option>
-        </select>
-        <hr>
-
-        <label id="rating"><strong>How would you rate our product?</strong><em>(1 being the lowest and 5 the
-                highest)</em></label><br><br>
-        <label for="rating"><input id="one" value="one" type="radio" name="one-five"> 1</label>
-        <label for="rating"><input id="two" value="two" type="radio" name="one-five"> 2</label>
-        <label for="rating"><input id="three" value="three" type="radio" name="one-five"> 3</label>
-        <label for="rating"><input id="four" value="four" type="radio" name="one-five"> 4</label>
-        <label for="rating"><input id="five" value="five" type="radio" name="one-five"> 5</label>
-        <hr>
-
-        <label><strong>How would you describe the taste?</strong></label><br><br>
-        <label for="sour"><input value="sour" id="sour" type="checkbox" name="taste" ca> Sour</label><br>
-        <label for="fresh"><input value="fresh" id="fresh" type="checkbox" name="taste"> Fresh</label><br>
-        <label for="greasy"><input value="greasy" id="greasy" type="checkbox" name="taste"> Greasy</label><br>
-        <label for="too-spicy"><input value="too-spicy" id="too-spicy" type="checkbox" name="taste">Too
-            Spicy</label><br>
-        <label for="too-salty"><input value="too-salty" id="too-salty" type="checkbox" name="taste">Too
-            Salty</label><br>
-        <label for="too-sweet"><input value="too-sweet" id="too-sweet" type="checkbox" name="taste">Too
-            Sweet</label><br>
-        <label for="perfect-balance"><input value="perfect-balace" id="perfect-balance" type="checkbox"
-                name="taste">Perfect Balance of Salt, Sugar and Spice</label><br>
-        <label for="juicy"><input value="juicy" id="juicy" type="checkbox" name="taste"> Juicy</label>
-        <hr>
-
-        <label for="extra-comments"><strong>Can you tell us more?</strong></label><br><br>
-        <textarea placeholder="enter your comment here..." id="comments" name="comments" rows="4" cols="30">
-    </textarea>
-        <br><br>
-        <hr>
-
-        <button type="submit" id="submit"><strong>SUBMIT</strong></button>
-    </form>
-</div>
+            <button type="submit" id="submit"><strong>SUBMIT</strong></button>
+        </form>
+    </div>
+</body>

@@ -3,6 +3,11 @@ body {
     background: linear-gradient(75deg, #0d3b66, #d63230);
 }
 
+#logo {
+    font-family: 'Lobster', cursive;
+    size: 10px;
+}
+
 header {
     color: #FBFBFF;
     text-align: center;
