@@ -3,6 +3,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <title>The Spicy Juan | Survey Form</title>
 
@@ -25,22 +27,22 @@
         <div class="form">
             <form id="survey-form">
                 <div class="options name">
-                    <label id="name-label">Name:</label> <br>
+                    <label id="name-label" class="bold-text">Name:</label> <br>
                     <input id="name" type="text" placeholder="enter your name here" id="name-label" required>
                 </div>
 
                 <div class="options email">
-                    <label id="email-label">E-mail:</label><br>
+                    <label id="email-label" class="bold-text">E-mail:</label><br>
                     <input id="email" type="email" placeholder="enter your email here" id="email-label" required>
                 </div>
 
                 <div class="options number">
-                    <label id="number-label">Age:<em>(optional)</em></label><br>
+                    <label id="number-label" class="bold-text">Age:<em>(optional)</em></label><br>
                     <input id="number" type="number" placeholder="your age" id="age-label" min="10" max="99">
                 </div>
 
                 <div class="options products">
-                    <label for="product-selection" required>What did you order?</label><br>
+                    <label for="product-selection" required class="bold-text">What did you order?</label><br>
                     <select name="products" id="dropdown">
                         <option value="">--Please choose an option--</option>
                         <option id="dropdown" value="kimchee">Kimchee</option>
@@ -52,33 +54,39 @@
                 </div>
 
                 <div class="options rating">
-                    <label id="rating">How would you rate our product?<em>(1 being the lowest and 5 the
+                    <label id="rating" class="bold-text">How would you rate our product?<em>(1 being the lowest and 5 the
                         highest)</em></label><br>
                     <label for="rating"><input id="one" value="one" type="radio" name="one-five"> 1</label>
                     <label for="rating"><input id="two" value="two" type="radio" name="one-five"> 2</label>
                     <label for="rating"><input id="three" value="three" type="radio" name="one-five"> 3</label>
                     <label for="rating"><input id="four" value="four" type="radio" name="one-five"> 4</label>
                     <label for="rating"><input id="five" value="five" type="radio" name="one-five"> 5</label>
+                    <br>
+                    <span class="fa fa-star fa-2x checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
                 </div>
 
 
                 <div class="options taste">
-                    <label>How would you describe the taste?</label><br>
-                    <label for="sour"><input value="sour" id="sour" type="checkbox" name="taste" ca> Sour</label><br>
-                    <label for="fresh"><input value="fresh" id="fresh" type="checkbox" name="taste"> Fresh</label><br>
-                    <label for="greasy"><input value="greasy" id="greasy" type="checkbox" name="taste"> Greasy</label><br>
-                    <label for="too-spicy"><input value="too-spicy" id="too-spicy" type="checkbox" name="taste">Too
+                    <label class="bold-text">How would you describe the taste?</label><br>
+                    <label for="sour"><input class="taste-options" value="sour" id="sour" type="checkbox" name="taste" ca> Sour</label><br>
+                    <label for="fresh"><input class="taste-options" value="fresh" id="fresh" type="checkbox" name="taste"> Fresh</label><br>
+                    <label for="greasy"><input class="taste-options" value="greasy" id="greasy" type="checkbox" name="taste"> Greasy</label><br>
+                    <label for="too-spicy"><input class="taste-options" value="too-spicy" id="too-spicy" type="checkbox" name="taste">Too
                     Spicy</label><br>
-                    <label for="too-salty"><input value="too-salty" id="too-salty" type="checkbox" name="taste">Too
+                    <label for="too-salty"><input class="taste-options" value="too-salty" id="too-salty" type="checkbox" name="taste">Too
                     Salty</label><br>
-                    <label for="too-sweet"><input value="too-sweet" id="too-sweet" type="checkbox" name="taste">Too
+                    <label for="too-sweet"><input class="taste-options" value="too-sweet" id="too-sweet" type="checkbox" name="taste">Too
                     Sweet</label><br>
-                    <label for="perfect-balance"><input value="perfect-balace" id="perfect-balance" type="checkbox"
+                    <label for="perfect-balance"><input class="taste-options" value="perfect-balace" id="perfect-balance" type="checkbox"
                     name="taste">Perfect Balance of Salt, Sugar and Spice</label><br>
-                    <label for="juicy"><input value="juicy" id="juicy" type="checkbox" name="taste"> Juicy</label>
+                    <label for="juicy"><input class="taste-options" value="juicy" id="juicy" type="checkbox" name="taste"> Juicy</label>
                 </div>
 
-                <div class="options extra-comments">
+                <div class="options extra-comments bold-text">
                     <label for="extra-comments">Can you tell us more?</label><br><br>
                     <textarea placeholder="enter your comment here..." id="comments" name="comments" rows="4">
                     </textarea>
