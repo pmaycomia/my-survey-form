@@ -32,7 +32,8 @@ body {
 
 .form-container {
     display: block;
-    margin: 0 50px;
+    padding: 20px;
+    margin: 0 20px;
     background-color: #faf0ca;
     opacity: 0.85;
     font-family: 'Abel', sans-serif;
@@ -63,39 +64,49 @@ body {
 
 .form {
     margin: 20px;
-}
-
-input[type="text"] {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Abel', sans-serif;
 }
 
-input[type="email"] {
-    font-size: 20px;
+.options {
+    margin: 20px 0;
+    border-top: solid 1px rgb(202, 169, 77);
+}
+
+.options label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
     font-family: 'Abel', sans-serif;
+    font-size: 1.2rem;
 }
 
 input[type="number"] {
-    font-size: 20px;
-    font-family: 'Abel', sans-serif;
+    width: 90px;
 }
 
 textarea {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Abel', sans-serif;
 }
 
-option {
-    font-size: 20px;
+.products option {
+    font-size: 1.2rem;
     font-family: 'Abel', sans-serif;
 }
 
 select {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Abel', sans-serif;
 }
 
+.options .extra-comments {
+    color: coral;
+    width: 180px;
+}
+
 button {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Abel', sans-serif;
 }

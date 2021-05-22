@@ -24,22 +24,22 @@
 
         <div class="form">
             <form id="survey-form">
-                <div class="name">
+                <div class="options name">
                     <label id="name-label">Name:</label> <br>
                     <input id="name" type="text" placeholder="enter your name here" id="name-label" required>
                 </div>
 
-                <div class="email">
+                <div class="options email">
                     <label id="email-label">E-mail:</label><br>
                     <input id="email" type="email" placeholder="enter your email here" id="email-label" required>
                 </div>
 
-                <div class="number">
+                <div class="options number">
                     <label id="number-label">Age:<em>(optional)</em></label><br>
-                    <input id="number" type="number" placeholder="your age here" id="age-label" min="10" max="99">
+                    <input id="number" type="number" placeholder="your age" id="age-label" min="10" max="99">
                 </div>
 
-                <div class="products">
+                <div class="options products">
                     <label for="product-selection" required>What did you order?</label><br>
                     <select name="products" id="dropdown">
                         <option value="">--Please choose an option--</option>
@@ -51,7 +51,7 @@
                     </select>
                 </div>
 
-                <div class="rating">
+                <div class="options rating">
                     <label id="rating">How would you rate our product?<em>(1 being the lowest and 5 the
                         highest)</em></label><br>
                     <label for="rating"><input id="one" value="one" type="radio" name="one-five"> 1</label>
@@ -62,7 +62,7 @@
                 </div>
 
 
-                <div class="taste">
+                <div class="options taste">
                     <label>How would you describe the taste?</label><br>
                     <label for="sour"><input value="sour" id="sour" type="checkbox" name="taste" ca> Sour</label><br>
                     <label for="fresh"><input value="fresh" id="fresh" type="checkbox" name="taste"> Fresh</label><br>
@@ -78,16 +78,24 @@
                     <label for="juicy"><input value="juicy" id="juicy" type="checkbox" name="taste"> Juicy</label>
                 </div>
 
-                <div class="extra-comments">
+                <div class="options extra-comments">
                     <label for="extra-comments">Can you tell us more?</label><br><br>
-                    <textarea placeholder="enter your comment here..." id="comments" name="comments" rows="4" cols="30">
+                    <textarea placeholder="enter your comment here..." id="comments" name="comments" rows="4">
                     </textarea>
                 </div>
 
 
                 <button type="submit" id="submit"><strong>SUBMIT</strong></button>
             </form>
+
+
         </div>
 
+
+    </div>
+
+    <div class="footer">
+
+        <p>contact </p>
     </div>
 </body>
